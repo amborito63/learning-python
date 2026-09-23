@@ -28,6 +28,5 @@ do
         {
             Console.WriteLine("Press enter to return to the menu...");
             Console.ReadLine();
-        } 
-    }
+        }}
 while (userChoice != "3");
