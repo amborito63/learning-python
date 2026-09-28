@@ -1,6 +1,7 @@
 //1. Countdown from 50 to 1
-Console.WriteLine("Counting down from 50 to 1:");
-    int count = 50;
+Console.WriteLine("CODE BLOCK 1.");
+Console.WriteLine("Counting down from 10 to 1:");
+    int count = 10;
     while (count >= 1)
     {
         Console.WriteLine(count);
@@ -8,6 +9,8 @@ Console.WriteLine("Counting down from 50 to 1:");
     }
 
 //2. Sum of numbers from 1 to 100
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 2.");
 Console.WriteLine("Calculating the sum of numbers from 1 to 100:");
     int sum = 0;
     int i = 1;
@@ -19,7 +22,9 @@ Console.WriteLine("Calculating the sum of numbers from 1 to 100:");
     Console.WriteLine("The sum of numbers from 1 to 100 is: " + sum);
 
 //3. Password attempt
-Console.WriteLine("Enter the password:");
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 3.");
+Console.Write("Enter the password:");
     string password = "secret";
     string userInput;
     int attempts = 3;
@@ -27,19 +32,21 @@ Console.WriteLine("Enter the password:");
     {
         userInput = Console.ReadLine();
         if (userInput == password)
-        {
+        {  
             Console.WriteLine("Access granted.");
             break;
         }
         else
         {
             attempts--;
-            Console.WriteLine("Incorrect password. Attempts remaining: " + attempts);
+            Console.WriteLine("Incorrect password. Try Again. Attempts remaining: " + attempts);           
         }
     }
 
 //4. Savings goal
-Console.WriteLine("Enter your savings goal:");
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 4.");
+Console.Write("Enter your savings goal: ");
     double goal = Convert.ToDouble(Console.ReadLine());
     double current = 0;
     while (current < goal)
@@ -53,6 +60,8 @@ Console.WriteLine("Enter your savings goal:");
 
 //5. Dice roll simulation
 // Simulating rolling a die until a 6 is rolled
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 5.");
 Console.WriteLine("Rolling a die until a 6 is rolled:");
     Random rand = new Random();
     int roll;

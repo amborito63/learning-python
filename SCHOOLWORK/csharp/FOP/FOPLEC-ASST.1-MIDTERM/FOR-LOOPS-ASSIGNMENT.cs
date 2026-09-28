@@ -1,5 +1,7 @@
 //1. Counter from 1 to 10
 
+
+Console.WriteLine("CODE BLOCK 1.");
 Console.WriteLine("Counting from 1 to 10:");
     for (int i = 1; i <= 10; i++)
     {
@@ -7,6 +9,8 @@ Console.WriteLine("Counting from 1 to 10:");
     }
 
 //2. Even number counter
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 2.");
 Console.WriteLine("Counting even numbers from 1 to 20:");
     for (int i = 1; i <= 20; i++)
     {
@@ -17,6 +21,8 @@ Console.WriteLine("Counting even numbers from 1 to 20:");
     }
 
 //3. Multiplication table generator
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 3.");
 Console.WriteLine("Enter a number to generate its multiplication table:");
     int number = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Multiplication table for " + number + ":");
@@ -26,6 +32,8 @@ Console.WriteLine("Enter a number to generate its multiplication table:");
     }
 
 //4. Countdown from 10 to 1
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 4.");
 Console.WriteLine("Counting down from 10 to 1:");
     for (int i = 10; i >= 1; i--)
     {
@@ -33,6 +41,8 @@ Console.WriteLine("Counting down from 10 to 1:");
     }
 
 //5. Sum of numbers from 1 to 100
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 5.");
 Console.WriteLine("Calculating the sum of numbers from 1 to 100:");
     int sum = 0;
     for (int i = 1; i <= 100; i++)

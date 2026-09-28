@@ -1,4 +1,5 @@
 //1. Ask for positive number
+Console.WriteLine("CODE BLOCK 1.");
 Console.Write("Enter a positive number: ");
 int number = int.Parse(Console.ReadLine());
 do
@@ -12,6 +13,8 @@ do
 } while (number <= 0);
 
 //2. Password validation
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 2.");
 string password = "secret";
 string userInput;
 do
@@ -25,6 +28,8 @@ do
 } while (userInput != password);
 
 //3. Sum of numbers from 1 to n
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 3.");
 Console.Write("Enter a positive number to calculate the sum from 1 to n: ");
 int n = int.Parse(Console.ReadLine());
 int sum = 0;
@@ -37,6 +42,8 @@ do
 Console.WriteLine("The sum of numbers from 1 to n is: " + sum);
 
 //4. Continue playing system
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 4.");
 char playAgain;
 do
 {
@@ -47,6 +54,8 @@ do
 } while (playAgain == 'y');
 
 //5. Number guessing game
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 5.");
 Random random = new Random();
 int targetNumber = random.Next(1, 101);
 int guess;

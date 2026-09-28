@@ -1,4 +1,5 @@
 //1. Simple Menu
+Console.WriteLine("CODE BLOCK 1.");
 Console.WriteLine("=====MENU=====");
 Console.WriteLine("1. Say Hello");
 Console.WriteLine("2. Date and Time");  
@@ -21,6 +22,8 @@ switch (userChoice)
 }
 
 //2. Day of the week identifier
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 2.");
 Console.WriteLine("Enter a number (1-7) to identify the day of the week:");
 int dayNumber = Convert.ToInt32(Console.ReadLine());
 switch (dayNumber)
@@ -52,6 +55,8 @@ switch (dayNumber)
 }
 
 //3. Simple Calculator
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 3.");
 Console.WriteLine("Enter the first number:");
     int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter the second number:");
@@ -82,6 +87,8 @@ switch (operation)
 }
 
 //4. Simple Grade Identifier
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 4.");
 Console.WriteLine("Enter your grade (0-100):");
     int grade = Convert.ToInt32(Console.ReadLine());
 
@@ -108,6 +115,8 @@ switch (grade)
 }
 
 //5. Simple Attack/Defend/Heal Game
+Console.WriteLine();
+Console.WriteLine("CODE BLOCK 5.");
 Console.WriteLine("Enter your action (attack, defend, heal):");
     string action = Console.ReadLine().ToLower();
 
