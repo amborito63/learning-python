@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ITC Activity 3</h1>
+    <h2>Steps to create a simple website</h2>
+    <ol type ="1" start = "1">
+        <li>Define the Purpose of the Website</li>
+        <li>Choose the platform of the website</li>
+        <li>Secure a domain name</li>
+        <li>Build and Design the webpages</li>
+        <li>Test, Debug, then Publish the website</li>
+    </ol>
+        </body>
+    </html>
