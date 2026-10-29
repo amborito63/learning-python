@@ -1,0 +1,78 @@
+string choice;
+string order;
+bool student = true;
+int[,] premadeArray = new int[3, 3]
+
+{
+    { 1, 2, 3 },
+    { 4, 5, 6 },
+    { 7, 8, 9 }
+};
+// Menu Initialization 
+Console.WriteLine("=====MENU=====");
+Console.WriteLine("1. Print the Premade Array");
+Console.WriteLine("2. End the Program");
+
+choice = Console.ReadLine();
+Console.WriteLine();
+switch (choice)
+{
+    case "1":
+        Console.WriteLine("You have chosen to print the premade array.");
+        Console.Write("The premade array is: ");
+        foreach (int num in premadeArray)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine();
+        Console.WriteLine("Ascending or Descending order? (A/D)");
+        order = Console.ReadLine().ToUpper();
+        Console.WriteLine();
+        if (order == "A")
+        {
+            if (student == true)
+                {
+                for (int i = 0; i < premadeArray.GetLength(0); i++)
+                    {
+                        for (int j = 0; j < premadeArray.GetLength(1); j++)
+                    {
+                    Console.Write(premadeArray[i, j] + " ");
+                    }
+                Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("You are not a Student.");
+            }
+        }
+        else if (order == "D")
+        {
+            if (student == true)
+            {
+                for (int i = premadeArray.GetLength(0) - 1; i >= 0; i--)
+                    {
+                        for (int j = premadeArray.GetLength(1) - 1; j >= 0; j--)
+                    {
+                    Console.Write(premadeArray[i, j] + " ");
+                }
+                Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("You are not a Student.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Order is incorrect, please select A or D.");
+        }
+        break;
+    case "2":
+        Console.WriteLine("You have chosen to end the program.");
+        break;
+    default:
+        Console.WriteLine("Invalid choice. Please select 1 or 2.");
+        break;
+}

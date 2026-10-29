@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            background-color: #FFFDD0;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .option {
+            width: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            background-color: #2980b9;
+        }
+
+        button[type="reset"] {
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="container">
+    <h2>Student Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="fullname">NAME:</label>
+        <input type="text" id="fullname" name="fullname"
+            placeholder="Enter your full name" required>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email"
+            placeholder="Enter your email" required>
+
+        <label for ="gradelvl">GRADE LEVEL:</label>
+        <select id="gradelvl" name="gradelvl" required>
+            <option value="">Select your grade level</option>
+            <option value="G11">Grade 11</option>
+            <option value="G12">Grade 12</option>
+            <option value="1st Year">1st Year College</option>
+            <option value="2nd Year">2nd Year College</option>
+            <option value="3rd Year">3rd Year College</option>
+            <option value="4th Year">4th Year College</option>
+        </select>
+
+        <label for="message">NOTES:</label>
+        <textarea id="message" name="message" rows="4"
+            placeholder="Enter your notes"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</main>
+
+</body>
+</html>

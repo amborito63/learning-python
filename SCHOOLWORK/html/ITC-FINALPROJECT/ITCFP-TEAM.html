@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f4f1eb">
+	<meta name="description" content="The portfolio of Form & Field, an independent design collective creating thoughtful digital and visual experiences.">
+	<title>Form &amp; Field — Design Collective</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="itcfp-styles.css" rel="stylesheet">
+    </head>
+<body>
+	<header class="wrap topbar">
+		<a class="brand" href="#home">
+			<span class="mark" aria-hidden="true"></span>
+			FORM &amp; FIELD
+		</a>
+		<button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+		<nav class="nav" aria-label="Main navigation">
+			<a href="ITCFP-FRONTPAGE.html">Home</a>
+			<a href="ITCFP-PROJECTS.html">Selected work</a>
+			<a href="ITCFP-ABOUT.html">Our approach</a>
+			<a href="ITCFP-TEAM.html">The collective</a>
+			<a class="pill" href="#contact">Start a project ↗</a>
+		</nav>
+    </header>
+<section class="wrap team" id="team">
+			<div class="section-head">
+				<div>
+					<div class="label">04 — Five minds, one table</div>
+					<h2>Meet the collective</h2>
+				</div>
+				<p class="team-intro">Meet the team behind the work, bringing leadership, development, content, and quality assessment together.</p>
+			</div>
+			<div class="team-grid">
+				<article class="team-card">
+					<div class="portrait"><img src="haru3.jpg" alt="Portrait for team leader Saharoding Tago"></div>
+					<h3>Tago, Saharoding</h3>
+					<p>LEADER</p>
+					<a class="member-email" href="mailto:saharoding.tago@adamson.edu.ph">saharoding.tago@adamson.edu.ph</a>
+				</article>
+				<article class="team-card">
+					<div class="portrait"><img src="francis2.jpg" alt="Portrait for HTML team member Francis Marvin Montes"></div>
+					<h3>Montes, Francis Marvin</h3>
+					<p>HTML</p>
+					<a class="member-email" href="mailto:francis.marvin.montes@adamson.edu.ph">francis.marvin.montes@adamson.edu.ph</a>
+				</article>
+				<article class="team-card">
+					<div class="portrait"><img src="kian2.jpg" alt="Portrait for CSS team member Kian Vanmark Bornasal"></div>
+					<h3>Bornasal, Kian Vanmark</h3>
+					<p>CSS</p>
+					<a class="member-email" href="mailto:kian.vanmark.bornasal@adamson.edu.ph">kian.vanmark.bornasal@adamson.edu.ph</a>
+				</article>
+				<article class="team-card">
+					<div class="portrait"><img src="pablo.png" alt="Portrait for content team member Pablo Miguel Silvestre"></div>
+					<h3>Silvestre, Pablo Miguel</h3>
+					<p>CONTENT</p>
+					<a class="member-email" href="mailto:pablo.miguel.silvestre@adamson.edu.ph">pablo.miguel.silvestre@adamson.edu.ph</a>
+				</article>
+				<article class="team-card">
+					<div class="portrait"><img src="troj3.jpg" alt="Portrait for quality assessment team member Trojan Emmanuel Cortez"></div>
+					<h3>Cortez, Trojan Emmanuel</h3>
+					<p>QUALITY ASSESSMENT</p>
+					<a class="member-email" href="mailto:trojan.emmanuel.cortez@adamson.edu.ph">trojan.emmanuel.cortez@adamson.edu.ph</a>
+				</article>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="wrap">
+				<div class="contact-top">
+					<h2>Have a good<br><em>question?</em></h2>
+					<a class="contact-link" href="mailto:hello@formandfield.studio">Tell us about it ↗</a>
+				</div>
+				<footer class="footer">
+					<span>© <span id="current-year">2025</span> Form &amp; Field Design Collective</span>
+					<div class="footer-links">
+						<a href="#work">Instagram ↗</a>
+						<a href="mailto:hello@formandfield.studio">Email ↗</a>
+						<a href="#home">Back to top ↑</a>
+					</div>
+					<span>Made with intention.</span>
+				</footer>
+			</div>
+		</section>
+        <script>
+		const menuButton=document.querySelector('.menu');
+		const navigation=document.querySelector('.nav');
+		const setMenuOpen=open=>{navigation.classList.toggle('open',open);menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');menuButton.textContent=open?'×':'☰'};
+		menuButton.addEventListener('click',()=>setMenuOpen(!navigation.classList.contains('open')));
+		navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMenuOpen(false)));
+		document.addEventListener('keydown',event=>{if(event.key==='Escape'&&navigation.classList.contains('open')){setMenuOpen(false);menuButton.focus()}});
+		document.querySelector('#current-year').textContent=new Date().getFullYear();
+	</script>
+    </body>
+</html>
