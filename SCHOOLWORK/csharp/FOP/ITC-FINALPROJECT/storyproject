@@ -1,0 +1,42 @@
+bool hasKey = false;
+bool doorUnlocked = false;
+bool hasAxe = false;
+bool isAlive = true;
+
+
+Console.WriteLine("=====GAME START=====");
+Console.WriteLine("You wake up in a dark room, with the stench of decay, What do you do?)");
+Console.ReadLine();
+Console.WriteLine("1. Search the room for an exit");
+Console.WriteLine("2. Search the room for items");
+Console.WriteLine("What do you choose?");
+int userchoice = Convert.ToInt32(Console.ReadLine());
+
+switch (userchoice)
+{
+    case 1:
+        if (hasKey)
+        {
+            Console.WriteLine("You use the key to unlock the door and escape the room. You win!");
+            doorUnlocked = true;
+        }
+        else
+        {
+        Console.WriteLine("You search the room and find a door, but it's locked. You need a key.");
+        }
+        break;
+    case 2:
+        if (hasKey)
+        {
+            Console.WriteLine("You already have the key. You can use it to unlock the door.");
+        }
+        else
+        {
+        Console.WriteLine("You search the room and find a rusty key on the floor.");
+        hasKey = true;
+        break;
+        }
+    default:
+        Console.WriteLine("Invalid choice. Please choose 1 or 2.");
+        break;
+}
